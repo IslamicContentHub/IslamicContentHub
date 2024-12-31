@@ -47,7 +47,7 @@
             <div class="audio-container">
                 <!-- Audio Item 1 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/001.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -60,7 +60,7 @@
 
                 <!-- Audio Item 2 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/002.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -73,7 +73,7 @@
 
                 <!-- Audio Item 3 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/003.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -86,7 +86,7 @@
 
                 <!-- Audio Item 4 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/004.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -99,7 +99,7 @@
 
                 <!-- Audio Item 5 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/005.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -112,7 +112,7 @@
 
                 <!-- Audio Item 6 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/006.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -122,9 +122,10 @@
                         <button>Download</button>
                     </a>
                 </div>
+
                 <!-- Audio Item 7 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/007.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -137,7 +138,7 @@
 
                 <!-- Audio Item 8 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/008.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -150,7 +151,7 @@
 
                 <!-- Audio Item 9 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/009.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -160,9 +161,10 @@
                         <button>Download</button>
                     </a>
                 </div>
+
                 <!-- Audio Item 10 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/010.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -175,7 +177,7 @@
 
                 <!-- Audio Item 11 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/011.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -188,7 +190,7 @@
 
                 <!-- Audio Item 12 -->
                 <div class="audio-item">
-                    <audio controls>
+                    <audio controls preload="none">
                         <source src="../nasheeds/012.mp3" type="audio/mp3">
                         Your browser does not support the audio element.
                     </audio>
@@ -213,21 +215,22 @@
             </ul>
         </div>
     </footer>
-<script>
-    // Get all the audio elements
-    const audios = document.querySelectorAll('audio');
-    
-    // Function to stop all other audios except the one that is currently playing
-    audios.forEach(audio => {
-        audio.addEventListener('play', function() {
-            audios.forEach(otherAudio => {
-                if (otherAudio !== audio) {
-                    otherAudio.pause(); // Stop other audio
-                    otherAudio.currentTime = 0; // Reset the other audio to the beginning
-                }
+
+    <script>
+        // Get all the audio elements
+        const audios = document.querySelectorAll('audio');
+
+        // Function to stop all other audios except the one that is currently playing
+        audios.forEach(audio => {
+            audio.addEventListener('play', function() {
+                audios.forEach(otherAudio => {
+                    if (otherAudio !== audio) {
+                        otherAudio.pause(); // Stop other audio
+                        otherAudio.currentTime = 0; // Reset the other audio to the beginning
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
