@@ -42,7 +42,6 @@ header {
 nav {
     background-color: #333;
     color: #fff;
-    /* padding: 10px 20px; */
 }
 .navbar {
     list-style: none;
@@ -52,7 +51,6 @@ nav {
 .navbar li {
     width: 100%;
     text-align: center;
-    /* border: #444 1px solid; */
     margin: 0 1px;
 }
 .navbar a {
@@ -236,35 +234,6 @@ button:hover {
     margin-bottom: 15px; /* Space below the paragraph */
     padding: 0 10px; /* Add padding for better text alignment */
 }
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
-.footer-content p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-}
-.footer-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-.footer-links li {
-    margin: 0 10px;
-}
-.footer-links a {
-    text-decoration: none;
-    color: #ff9900;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
-.footer-links a:hover {
-    color: #fff;
-}
 /* Responsive Design for screens greater than 1280px (4 columns) */
 @media (min-width: 1280px) {
     .row-container .item {
@@ -316,4 +285,175 @@ footer {
     .hero-text {
         padding: 10px;
     }
+}
+/* Main Content */
+article {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Heading Styles */
+article header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+/* Section Heading Styles */
+article section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+/* Paragraph Text */
+article section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+/* List Styles */
+article section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+article section ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+article section ul li strong {
+    font-weight: bold;
+    color: #333;
+}
+/* Style for the update panel */
+.update-panel {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 100%; /* Ensure the panel doesn't overflow */
+    box-sizing: border-box;
+}
+
+.update-panel h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Container for the updates */
+.update-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between updates */
+}
+/* Style for each individual update item */
+.update-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Add smooth transition for hover effect */
+}
+.update-item:hover {
+    background-color: #f0f0f0; /* Light background change on hover */
+}
+.update-item h3 {
+    font-size: 1.25rem;
+    color: #007b5e;
+    margin-bottom: 10px;
+}
+.update-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+.update-item time {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .update-panel {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .update-list {
+        gap: 15px; /* Reduces the space between updates on mobile */
+    }
+
+    .update-item {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .update-item h3 {
+        font-size: 1.125rem;
+    }
+
+    .update-item p {
+        font-size: 0.95rem;
+    }
+
+    .update-item time {
+        font-size: 0.85rem;
+    }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+    .update-panel {
+        margin: 15px;
+    }
+
+    .update-item {
+        padding: 14px;
+        margin-bottom: 14px;
+    }
+    
+    .update-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .update-item p {
+        font-size: 1rem;
+    }
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.footer-content p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.footer-links li {
+    margin: 0 10px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #ff9900;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: #fff;
 }
