@@ -7,21 +7,51 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://islamiccontenthub.github.io/pages/contact.html</loc>
+    <loc>https://islamiccontenthub.github.io/pages/nasheeds.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://islamiccontenthub.github.io/pages/subpages/next-nasheeds.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://islamiccontenthub.github.io/pages/about.html</loc>
+    <loc>https://islamiccontenthub.github.io/pages/art.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://islamiccontenthub.github.io/pages/subpages/next-art.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://islamiccontenthub.github.io/index.html</loc>
+    <loc>https://islamiccontenthub.github.io/pages/history.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://islamiccontenthub.github.io/pages/subpages/history-gallery-2.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://islamiccontenthub.github.io/pages/subpages/history-gallery-3.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://islamiccontenthub.github.io/pages/subpages/history-gallery-4.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
