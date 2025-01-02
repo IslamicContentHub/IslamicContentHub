@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -292,29 +293,6 @@ button:hover {
     }
 }
 /* Main Content */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-}
-.btn:hover {
-    background-color: #0056b3;
-}
-@media (max-width: 768px) {
-    .btn {
-        width: 100%;
-        font-weight: bolder;
-        margin: 5px 5px 5px 5px;
-        padding: 5px 10px;
-        font-size: 0.5rem;
-
-    }
-}
 article {
     padding: 20px;
     max-width: 1200px;
@@ -358,6 +336,29 @@ article section ul li {
 article section ul li strong {
     font-weight: bold;
     color: #333;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        font-weight: bolder;
+        margin: 3px;
+        padding: 3px 7px;
+        font-size: 0.3rem;
+
+    }
 }
 /* Style for the update panel */
 .update-panel {
