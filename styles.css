@@ -355,8 +355,8 @@ article section ul li strong {
         width: 100%;
         font-weight: bolder;
         margin: 3px;
-        padding: 3px 7px;
-        font-size: 1rem;
+        padding: 3px;
+        font-size: .5rem;
 
     }
 }
