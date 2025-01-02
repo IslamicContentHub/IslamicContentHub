@@ -274,6 +274,12 @@ button:hover {
     .overview-item {
         padding: 15px;
     }
+    article header h1{
+        font-size: 1.5rem;
+    }
+    article section h2{
+        font-size: 0.2rem;
+    }
 }
 @media (max-width: 480px) {
     .hero-text h1 {
@@ -330,6 +336,29 @@ article section ul li {
 article section ul li strong {
     font-weight: bold;
     color: #333;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        font-weight: bolder;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 10px;
+        font-size: 0.5rem;
+
+    }
 }
 /* Style for the update panel */
 .update-panel {
