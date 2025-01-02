@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://islamiccontenthub.github.io/sitemap.xml
