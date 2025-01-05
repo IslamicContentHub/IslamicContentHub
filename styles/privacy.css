@@ -97,7 +97,7 @@ footer {
 }
 .footer-links a {
     text-decoration: none;
-    color: #ff9900;
+    color: #0effd7;
     font-size: 0.9rem;
     transition: color 0.3s;
 }
@@ -109,15 +109,19 @@ footer {
     .hero-text h1 {
         font-size: 2.5rem;
     }
+
     .hero-text p {
         font-size: 1.2rem;
     }
+
     .privacy-content {
         padding: 20px;
     }
+
     .privacy-content h2 {
         font-size: 2rem;
     }
+
     .privacy-content h3 {
         font-size: 1.5rem;
     }
