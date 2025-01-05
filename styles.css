@@ -20,6 +20,7 @@ header {
     width: 100%;
     height: auto;
     overflow: hidden;
+    filter: brightness(90%);
 }
 .hero-image img {
     width: 100%;
@@ -34,7 +35,7 @@ header {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    background: rgba(255, 255, 255, 0); /* Semi-transparent white */
     border-radius: 10px;
     backdrop-filter: blur(10px); /* Creates the frosted glass effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
@@ -60,7 +61,8 @@ nav {
     transition: color 0.3s;
 }
 .navbar a:hover {
-    color: #ff9900;
+    color: #2cceff;
+    border-bottom: 1px solid rgb(1, 255, 255);
 }
 main {
     padding: 20px;
@@ -104,7 +106,7 @@ main {
     margin-bottom: 15px;
 }
 .overview-item button {
-    background-color: #ff9900;
+    background-color: #3fb8a4;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -114,7 +116,7 @@ main {
     margin-bottom: 15px;
 }
 .overview-item button:hover {
-    background-color: #cc7a00;
+    background-color: #0effd7;
 }
 /* Row Container Styling */
 .audio-container {
@@ -159,7 +161,7 @@ main {
 }
 /* Button Styling */
 button {
-    background-color: #ff9900;
+    background-color: #3fb8a4;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -168,7 +170,7 @@ button {
     transition: background-color 0.3s;
 }
 button:hover {
-    background-color: #cc7a00;
+    background-color: #0effd7;
 }
 /*Next Page*/
 .next-page{
@@ -355,8 +357,8 @@ article section ul li strong {
         width: 100%;
         font-weight: bolder;
         margin: 3px;
-        padding: 3px;
-        font-size: .5rem;
+        padding: 3px 7px;
+        font-size: 0.3rem;
 
     }
 }
@@ -479,7 +481,7 @@ footer {
 }
 .footer-links a {
     text-decoration: none;
-    color: #ff9900;
+    color: #0effd7;
     font-size: 0.9rem;
     transition: color 0.3s;
 }
