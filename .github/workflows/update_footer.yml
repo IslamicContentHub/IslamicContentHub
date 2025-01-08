@@ -1,0 +1,83 @@
+name: Update Footer Links
+
+on:
+  push:
+    branches:
+      - main  # Trigger when changes are pushed to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
+
+jobs:
+  update-footer:
+    runs-on: ubuntu-latest  # Use Ubuntu runner
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Set up Python environment
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      # Install required Python packages
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 lxml
+
+      # Modify HTML files and add Terms of Service link
+      - name: Update footer in HTML files
+        run: |
+          # Create Python script to add Terms of Service link to footer
+          echo '''
+import os
+from bs4 import BeautifulSoup
+
+directory = "./"  # Current directory (assumes files are in the root)
+
+terms_link = '<li><a href="../pages/terms-of-service.html">Terms of Service</a></li>'
+
+def add_terms_link_to_footer(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        soup = BeautifulSoup(file, 'html.parser')
+
+        footer = soup.find('footer')
+        if footer:
+            ul = footer.find('ul')
+            if ul:
+                ul.append(BeautifulSoup(terms_link, 'html.parser'))
+            else:
+                print(f"No <ul> tag found in footer of {file_path}")
+                return False
+        else:
+            print(f"No <footer> tag found in {file_path}")
+            return False
+
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write(str(soup))
+        return True
+
+for filename in os.listdir(directory):
+    if filename.endswith(".html"):
+        file_path = os.path.join(directory, filename)
+        if add_terms_link_to_footer(file_path):
+            print(f"Successfully added Terms of Service link to {filename}")
+        else:
+            print(f"Failed to add link to {filename}")
+          ''' > add_footer.py
+
+          # Run the Python script to update the footer links
+          python add_footer.py
+
+      # Commit changes and push back to the repository
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Add Terms of Service link to footer"
+          git push
