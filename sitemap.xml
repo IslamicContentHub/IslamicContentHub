@@ -9,49 +9,55 @@
   <url>
     <loc>https://islamiccontenthub.site/pages/nasheeds.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://islamiccontenthub.site/pages/subpages/next-nasheeds.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://islamiccontenthub.site/pages/art.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://islamiccontenthub.site/pages/subpages/next-art.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://islamiccontenthub.site/pages/history.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://islamiccontenthub.site/pages/subpages/history-gallery-2.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://islamiccontenthub.site/pages/subpages/history-gallery-3.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://islamiccontenthub.site/pages/subpages/history-gallery-4.html</loc>
     <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://islamiccontenthub.site/hadith/page_1.html</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
