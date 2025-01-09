@@ -492,10 +492,11 @@ footer {
     }
     .footer-links li {
         margin: 0 4px;
+        font-size: 0.8rem;
     }
     .footer-content p {
-        font-size: 0.6rem;
-        margin-bottom: 7px;
+        font-size: 0.7rem;
+        margin-bottom: 8px;
     }
 }
 @media (max-width:438px) {
@@ -505,10 +506,10 @@ footer {
     }
     .footer-links li {
         margin: 0 3px;
-        font-size: 0.7;
+        font-size: 0.6rem;
     }
     .footer-content p {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         margin-bottom: 6px;
     }
 }
