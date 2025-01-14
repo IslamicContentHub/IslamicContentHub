@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Amiri&display=swap');
-h1 {
+#page-header h1 {
     text-align: center;
     font-size: 40px;
     color: #1a5276;
@@ -48,10 +48,10 @@ input[type="text"]:focus {
     margin-bottom: 18px;
     line-height: 1.8;
 }
-.narrator {
-    font-size: 18px;
-    color: #4d5656;
-    margin-bottom: 5px;
+.hadith-box >:nth-of-type(3){
+    background-color: #c4c4c4;
+    font-weight: 600;
+    color: black;
 }
 .translation {
     font-size: 20px;
