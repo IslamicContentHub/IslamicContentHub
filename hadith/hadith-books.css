@@ -1,0 +1,257 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+/* Base Styles */
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(90%);
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0); /* Semi-transparent white */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+/* Responsive Design for screens below 768px (1 column) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar li a{
+        font-size: 0.8rem;
+        padding: 5px
+    }
+    .navbar li {
+        margin: 1px 0;
+    }
+}
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1rem;
+    }
+    .hero-text p {
+        font-size: 0.65rem;
+    }
+    .hero-text {
+        padding: 10px;
+    }
+}
+nav {
+    background-color: #333;
+    color: #fff;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.navbar li {
+    width: 100%;
+    text-align: center;
+    margin: 0 1px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: #2cceff;
+    border-bottom: 1px solid rgb(1, 255, 255);
+}
+
+/* Container for the entire box layout */
+#box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Smaller gap between boxes */
+    margin: 20px auto; /* Adjust margin for a tighter fit */
+    padding: 15px;
+    max-width: 1000px; /* Reduce max-width for a more compact layout */
+}
+
+/* Styling for each individual box */
+.box {
+    width: 30%; /* Width of each box */
+    height: 280px; /* Reduced height for more compact layout */
+    margin: 10px;
+    background-size: cover; /* Ensures the background image covers the box */
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px; /* Reduced border radius for a more subtle look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1; /* Full opacity for clear image view */
+}
+
+/* No overlay to ensure clear image visibility */
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent; /* No overlay */
+    z-index: 1; /* Keep overlay behind text */
+}
+
+/* Text styling */
+.box a {
+    position: relative;
+    color: #fff; /* White text for contrast */
+    font-size: 20px; /* Smaller font size for readability */
+    font-weight: bold;
+    text-decoration: none; /* Removes underline */
+    padding: 12px 18px; /* Reduced padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Smaller border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for the text */
+    z-index: 2; /* Ensure text appears above the background */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.4s ease;
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    letter-spacing: 1px; /* Adjusted letter-spacing */
+    font-family: 'Arial', sans-serif; /* Simpler font for cleaner look */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Soft glowing effect */
+}
+
+/* Text hover effect */
+.box a:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Lighter background behind the text */
+    color: #333; /* Change text color for contrast */
+    transform: translateY(-3px); /* Slightly raise text */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow for the text */
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.8); /* More intense glowing effect on hover */
+}
+
+/* Hover effect for the box */
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+/* Box fade-in animation on page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.box {
+    animation: fadeIn 1s ease-out forwards; /* Fade-in animation for each box */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .box {
+        width: 45%; /* On smaller screens, each box will take up 45% of the container */
+        height: 250px; /* Adjust height */
+    }
+
+    .box a {
+        font-size: 18px; /* Smaller font size for mobile */
+        padding: 10px 15px; /* Adjust padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%; /* On mobile, boxes will take full width */
+        height: 220px; /* Adjust height */
+    }
+
+    .box a {
+        font-size: 16px; /* Further reduce font size for mobile */
+        padding: 8px 12px; /* Adjust padding for mobile */
+    }
+}
+
+
+/* Optional: Increase the size of the container on larger screens */
+@media (min-width: 1200px) {
+    #box-container {
+        max-width: 1200px;            /* Limit the container width to prevent it from stretching too far */
+        margin: 0 auto;               /* Center it on the page */
+    }
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.footer-content p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.footer-links li {
+    margin: 0 10px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #0effd7;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: #fff;
+}
+@media (max-width:768px) {
+    footer {
+        padding: 12px 0;
+        margin-top: 17px;
+    }
+    .footer-links li {
+        margin: 0 7px;
+    }
+    .footer-content p {
+        font-size: 0.7rem;
+        margin-bottom: 7px;
+    }
+}
