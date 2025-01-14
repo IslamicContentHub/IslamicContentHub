@@ -37,7 +37,7 @@ header {
     padding: 20px;
     background: rgba(255, 255, 255, 0); /* Semi-transparent white */
     border-radius: 10px;
-    backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+    backdrop-filter: blur(20px); /* Creates the frosted glass effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 /* Responsive Design for screens below 768px (1 column) */
